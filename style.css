@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eef2f3,
+    #b2c0cc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eef2f3,
+    #b2c0cc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  width: 300px;
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eef2f3,
+    #9fb0be
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eef2f3,
+    #9fb0be
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 550px;
+  border-radius: 5px;
+  -webkit-box-shadow: 7px 7px 15px -2px rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: 7px 7px 15px -2px rgba(0, 0, 0, 0.85);
+  box-shadow: 7px 7px 15px -2px rgba(0, 0, 0, 0.85),
+    -7px -7px 15px -2px rgba(0, 0, 0, 0.85);
+}
+
+.container h2 {
+  color: #333;
+  text-align: center;
+  margin-top: 6px;
+  font-size: 30px;
+}
+
+.form-control {
+  margin-top: 35px;
+}
+
+.form-control label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  font-weight: 800;
+  margin-bottom: 3px;
+}
+
+.form-control input {
+  padding: 4.5px 9.5px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 3.5px;
+  outline: none;
+  text-align: center;
+}
+
+.form-control input:focus {
+  outline: none;
+  border: 2px solid #ffffff;
+}
+
+.form-control input::placeholder {
+  text-align: center;
+}
+
+.result {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 30px auto;
+  border: 6.5px solid rgb(13, 132, 141);
+}
+
+.result div {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1.5px;
+}
+
+p {
+  color: #333;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+}
