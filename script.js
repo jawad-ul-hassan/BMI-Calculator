@@ -1,15 +1,18 @@
+//DOM elements
 const weight = document.getElementById('weight');
 const height = document.getElementById('height');
 const container = document.querySelector('.container');
 const bmi = document.getElementById('bmi');
 const bmiResult = document.getElementById('bmi-result');
 
+//BMI Calculation
 bmiCalc = () => {
   const BMI = weight.value / (height.value * height.value);
   const resultBMI = (BMI * 10000).toFixed(1);
   return resultBMI;
 };
 
+//BMI Range Check
 checkCategory = value => {
   if (isFinite(value)) {
     if (value < 18.5) {
@@ -31,6 +34,7 @@ checkCategory = value => {
   }
 };
 
+//UI Update Function
 updateUI = () => {
   bmiCalc();
   if (isFinite(bmiCalc())) {
@@ -39,4 +43,5 @@ updateUI = () => {
   bmiResult.innerText = checkCategory(bmiCalc());
 };
 
+//Event Handler
 container.addEventListener('input', updateUI);
