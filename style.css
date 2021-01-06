@@ -110,3 +110,50 @@ p {
   font-size: 16px;
   font-weight: 800;
 }
+
+/*Media Queries  */
+@media (max-width: 500px) {
+  .container {
+    width: 280px;
+    height: 520px;
+  }
+
+  .container h2 {
+    margin-top: 5px;
+    font-size: 25px;
+  }
+
+  .form-control {
+    margin-top: 30px;
+  }
+
+  .form-control label {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+
+  .form-control input {
+    padding: 3.5px 8.5px;
+    border-radius: 3px;
+  }
+
+  .result {
+    width: 145px;
+    height: 145px;
+    margin: 27px auto;
+    border: 5.5px solid rgb(13, 132, 141);
+  }
+
+  .result div {
+    font-size: 28px;
+    letter-spacing: 1.5px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 15px;
+  }
+}
+
